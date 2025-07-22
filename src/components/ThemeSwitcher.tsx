@@ -17,7 +17,7 @@ const ThemeSwitcher = () => {
         {`${theme || "Default"} Theme`}
       </div>
 
-      <Dropdown as={ButtonGroup} size="lg">
+      <Dropdown as={ButtonGroup} size="lg" className={`text-center`}>
         <Button
           className="text-capitalize"
           variant={theme ? theme : "secondary"}

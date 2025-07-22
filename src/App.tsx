@@ -1,16 +1,15 @@
-import "../App.scss";
-import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ThemeSwitcher from "./components/ThemeSwitcher";
+import Header from "./components/Header";
+import NavigationBar from "./components/NavigationBar";
+import "./scss/custom.scss";
 
 // or less ideally
 
 function App() {
   return (
-    <>
-      <p>Hello World!</p>
-      <ThemeSwitcher />
-    </>
+    <div className="App">
+      <NavigationBar />
+      <Header /> <Header /> <Header />
+    </div>
   );
 }
 
