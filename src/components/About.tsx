@@ -1,13 +1,15 @@
 import ViewMyProjects from "./ViewMyProjects";
+import UIRowCenter from "./ui/UIRowCenter";
 
 const About = () => {
   return (
     <div className="bg-dark text-light py-5 mb-5" id="about">
       <div className="container">
         <div className="row d-flex flex-column">
-          <div className="col d-flex flex-row justify-content-center pb-5 fw-bolder">
+          <UIRowCenter style="col pb-5 fw-bolder">
             <h3> ABOUT US</h3>
-          </div>
+          </UIRowCenter>
+
           <div
             className="col py-2 px-md-0 mb-5"
             style={{ paddingLeft: "50px", paddingRight: "50px" }}
@@ -31,9 +33,9 @@ const About = () => {
               Also I am a Finnish Citizen and Do you not need any Work Visa.
             </p>
           </div>
-          <div className="col d-flex flex-row justify-content-center">
+          <UIRowCenter style="col">
             <ViewMyProjects />
-          </div>
+          </UIRowCenter>
         </div>
       </div>
     </div>

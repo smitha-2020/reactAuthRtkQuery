@@ -14,8 +14,8 @@ const ProjectCard = ({ proj }: { proj: ProjectItemProps }) => {
             </Card.Title>
           </div>
           <Card.Text>{proj.projectDescription}</Card.Text>
-          <div className="card-title">
-            <Button variant="primary">Go somewhere</Button>
+          <div className="card-button">
+            <Button variant="flat">Go somewhere</Button>
           </div>
         </Card.Body>
       </Card>

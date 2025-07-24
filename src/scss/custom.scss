@@ -38,10 +38,11 @@ $thumbnail-border-color: pink;
   }
   .card-main {
     margin-bottom: 50px;
-    .card-title {
+    .card-title,
+    .card-button {
       display: flex;
-      flex-direction: "row";
-      justify-content: "center";
+      flex-direction: row;
+      justify-content: center;
     }
   }
 
