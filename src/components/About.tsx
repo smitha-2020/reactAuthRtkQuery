@@ -7,11 +7,11 @@ const About = () => {
       <div className="container">
         <div className="row d-flex flex-column">
           <UIRowCenter style="col pb-5 fw-bolder">
-            <h3> ABOUT US</h3>
+            <h3> ABOUT ME</h3>
           </UIRowCenter>
 
           <div
-            className="col py-2 px-md-0 mb-5"
+            className="py-2 px-md-0 mb-5"
             style={{ paddingLeft: "50px", paddingRight: "50px" }}
           >
             <p className="text-start lh-lg">
