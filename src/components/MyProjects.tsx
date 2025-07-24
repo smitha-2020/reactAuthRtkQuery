@@ -4,7 +4,6 @@ import ProjectCard from "./ProjectCard";
 import { ThemeContext } from "./ThemeContextProvider";
 const MyProjects = () => {
   const appContext = useContext(ThemeContext);
-  console.log(appContext);
   return (
     <div>
       <div className="container card-main">

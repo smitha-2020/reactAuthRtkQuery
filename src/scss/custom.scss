@@ -1,29 +1,28 @@
 //$primary: white;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+//custom color for existing theme
 $primary: #712cf9;
-$secondary: white;
-$success: green;
+$secondary: gray;
 $thumbnail-border-color: pink;
-$info: #0d6efd;
-$warning: red;
-$danger: red;
-$light: white;
-$dark: #212529;
 
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark,
-);
-
+//custom variable
 $custom-colors: (
   "custom-color": #0d6efd,
 );
 
+//Merging custom colors
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+  )
+);
+
+//Merging existing to custom color
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -61,8 +60,16 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
   .card-main {
     margin-bottom: 50px;
-    .card-title,
-    .card-button {
+    .proj-card {
+      transition: all 0.3s;
+      &:hover {
+        cursor: pointer;
+        scale: 1.1;
+        opacity: 0.75;
+      }
+    }
+    .proj-card-title,
+    .proj-card-button {
       display: flex;
       flex-direction: row;
       justify-content: center;
