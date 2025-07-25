@@ -7,7 +7,7 @@ const MyProjects = () => {
   return (
     <div>
       <div className="container card-main">
-        <h3 className="mb-3 card-title">
+        <h3 className="mb-3 proj-card-title">
           {appContext.toUpperCase()}'s Projects
         </h3>
         <div className="row g-5">

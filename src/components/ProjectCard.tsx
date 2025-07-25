@@ -9,7 +9,7 @@ const ProjectCard = ({ proj }: { proj: ProjectItemProps }) => {
         <Card.Img variant="top" src={proj.projectImg} />
         <Card.Body>
           <div className="proj-card-title">
-            <Card.Title className="proj-title text-capitalize fs-3">
+            <Card.Title className="proj-title  text-capitalize fs-3 text-custom-color">
               {proj.projectTitle}
             </Card.Title>
           </div>

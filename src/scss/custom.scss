@@ -3,23 +3,18 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
 //custom color for existing theme
 $primary: #712cf9;
-$secondary: gray;
+$secondary: white;
 $thumbnail-border-color: pink;
 
 //custom variable
 $custom-colors: (
-  "custom-color": #0d6efd,
-);
-
-//Merging custom colors
-$theme-colors: map-merge(
-  $theme-colors,
-  (
-    "primary": $primary,
-    "secondary": $secondary,
-  )
+  "custom-color": tint-color(#0d6efd, 10%),
 );
 
 //Merging existing to custom color
