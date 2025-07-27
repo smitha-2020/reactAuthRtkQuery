@@ -1,5 +1,9 @@
 const Footer = () => {
-  return <div></div>;
+  return (
+    <div className="d-flex flex-row justify-content-center py-3">
+      © SmithaKamath 2025.
+    </div>
+  );
 };
 
 export default Footer;

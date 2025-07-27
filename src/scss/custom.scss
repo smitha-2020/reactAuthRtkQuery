@@ -2,6 +2,7 @@
 
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
 
 @function tint-color($color, $weight) {
   @return mix(white, $color, $weight);
@@ -46,7 +47,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     flex-direction: column;
     align-items: center;
   }
-  @media (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     .custom-nav {
       flex-direction: row;
       width: 100%;
