@@ -1,8 +1,6 @@
 import type { ProjectItemProps } from "../types/type";
 import Project1Img from "../assets/project1-img.jpg";
 import Project2Img from "../assets/project2-img.jpg";
-import Project3Img from "../assets/project3-img.jpg";
-import Project4Img from "../assets/project4-img.jpg";
 
 const ProjectsItems: ProjectItemProps[] = [
   {
@@ -18,7 +16,7 @@ const ProjectsItems: ProjectItemProps[] = [
     projectImg: Project2Img,
     projectTitle: "Project 2",
     projectDescription:
-      "Spearheaded the development of a cross-platform mobile app using React Native, enhancing user engagement.Collaborated with UI/UX designers(Figma) creating intuitive interface for iOS and Android.",
+      "Development of a cross-platform mobile app using React Native, creating intuitive interface for iOS and Android using component library to develop Theme and customise components.",
 
     projectLink: "https://github.com/smitha-2020/reactNative_examples",
   },

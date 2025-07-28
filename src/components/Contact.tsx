@@ -2,7 +2,7 @@ import UIRowCenter from "./ui/UIRowCenter";
 
 const Contact = () => {
   return (
-    <div className="bg-dark text-light py-5" id="contact">
+    <div className="contact text-light py-5" id="contact">
       <div className="container">
         <div className="row d-flex flex-column">
           <UIRowCenter style="col pb-5 fw-bolder">

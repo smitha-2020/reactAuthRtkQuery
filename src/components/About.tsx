@@ -3,7 +3,7 @@ import UIRowCenter from "./ui/UIRowCenter";
 
 const About = () => {
   return (
-    <div className="bg-dark text-light py-5 mb-5" id="about">
+    <div className="about text-light py-5 mb-5" id="about">
       <div className="container">
         <div className="row d-flex flex-column">
           <UIRowCenter style="col pb-5 fw-bolder">

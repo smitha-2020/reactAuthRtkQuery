@@ -8,24 +8,41 @@
 @import "utilities";
 @import "functions";
 
-@function tint-color($color, $weight) {
-  @return mix(white, $color, $weight);
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .App {
+    .navBar {
+      background-color: var(--bs-gray-900);
+    }
+
+    a {
+      color: white !important;
+    }
+
+    .about,
+    .contact {
+      background-color: var(--bs-gray-900);
+    }
+  }
 }
 
-//custom color for existing theme
-//custom variable
-$custom-colors: (
-  "custom-color": tint-color(#0d6efd, 10%),
-);
+@include color-mode(light) {
+  .App {
+    .navBar {
+      background-color: var(--bs-gray);
+    }
+    a {
+      color: $secondary !important;
+    }
 
-//Merging existing to custom color
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  box-sizing: border-box;
+    .about,
+    .contact {
+      background-color: var(--bs-gray);
+    }
+  }
 }
+
 .App {
   font-family: "Poppins", sans-serif;
 
@@ -38,10 +55,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     font-family: $font-stack;
     text-decoration: "underline";
   }
-  a {
-    color: $secondary !important;
-  }
-
   .custom-nav {
     @include flexPositioning(column, center);
     align-items: center;
@@ -53,6 +66,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
       width: 100%;
     }
   }
+
   .card-main {
     margin-bottom: 50px;
     .proj-card {
@@ -73,6 +87,25 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   h1 {
     font-size: rem(48);
   }
+}
+
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
+//custom color for existing theme
+//custom variable
+$custom-colors: (
+  "custom-color": tint-color(#0d6efd, 10%),
+);
+
+//Merging existing to custom color
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
 @import "bootstrap/scss/bootstrap";
