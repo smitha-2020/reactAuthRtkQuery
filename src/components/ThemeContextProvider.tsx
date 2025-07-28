@@ -1,9 +1,9 @@
-import { createContext, useState, type ReactNode } from "react";
+import { createContext, type ReactNode } from "react";
 export const ThemeContext = createContext("light");
 const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
-  const [value, setValue] = useState("Smitha");
+  const name: string = "Smitha";
 
-  return <ThemeContext value={value}>{children}</ThemeContext>;
+  return <ThemeContext value={name}>{children}</ThemeContext>;
 };
 
 export default ThemeContextProvider;

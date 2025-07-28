@@ -1,0 +1,5 @@
+@mixin flexPositioning($direction, $contentPosition) {
+  flex-direction: $direction;
+  display: flex;
+  justify-content: $contentPosition;
+}

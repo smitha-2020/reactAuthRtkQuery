@@ -3,16 +3,16 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
+@import "variables";
+@import "mixins";
+@import "utilities";
+@import "functions";
 
 @function tint-color($color, $weight) {
   @return mix(white, $color, $weight);
 }
 
 //custom color for existing theme
-$primary: #712cf9;
-$secondary: white;
-$thumbnail-border-color: pink;
-
 //custom variable
 $custom-colors: (
   "custom-color": tint-color(#0d6efd, 10%),
@@ -35,23 +35,22 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   a,
   .navbar-brand,
   .proj-title {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: $font-stack;
     text-decoration: "underline";
   }
   a {
-    color: white !important;
+    color: $secondary !important;
   }
 
   .custom-nav {
-    display: flex;
-    flex-direction: column;
+    @include flexPositioning(column, center);
     align-items: center;
   }
+
   @include media-breakpoint-up(lg) {
     .custom-nav {
-      flex-direction: row;
+      @include flexPositioning(row, flex-end);
       width: 100%;
-      justify-content: flex-end;
     }
   }
   .card-main {
@@ -64,20 +63,16 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
         opacity: 0.75;
       }
     }
+
     .proj-card-title,
     .proj-card-button {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      @include flexPositioning(row, center);
     }
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: rem(48);
   }
 }
 
-@import "mixins";
-@import "variables";
-@import "utilities";
 @import "bootstrap/scss/bootstrap";

@@ -26,6 +26,10 @@ const About = () => {
               Lighsail, Lambda functions,S3) and Docker.
             </p>
             <p className="text-start lh-lg">
+              Below are listed a few projects which i developed in my spare
+              time. Please have a look.
+            </p>
+            <p className="text-start lh-lg">
               I am enthusiastic and a quick learner and have good communication
               skills in English.
             </p>

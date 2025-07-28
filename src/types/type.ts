@@ -3,4 +3,5 @@ export type ProjectItemProps = {
   projectImg: string;
   projectTitle: string;
   projectDescription: string;
+  projectLink: string;
 };

@@ -15,7 +15,9 @@ const ProjectCard = ({ proj }: { proj: ProjectItemProps }) => {
           </div>
           <Card.Text>{proj.projectDescription}</Card.Text>
           <div className="proj-card-button">
-            <Button variant="flat">Project Details</Button>
+            <Button href={proj.projectLink} target="_blank" variant="flat">
+              Project Details
+            </Button>
           </div>
         </Card.Body>
       </Card>

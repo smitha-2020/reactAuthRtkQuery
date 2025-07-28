@@ -1,8 +1,8 @@
 const ViewMyProjects = () => {
   return (
-    <button type="button" className="btn btn-primary">
+    <a className="btn btn-primary" href="#projects">
       View My Work
-    </button>
+    </a>
   );
 };
 

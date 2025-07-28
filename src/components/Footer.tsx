@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="d-flex flex-row justify-content-center py-3">
-      © SmithaKamath 2025.
+      ©copyright2025.
     </div>
   );
 };

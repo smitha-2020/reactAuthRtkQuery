@@ -1,6 +1,7 @@
 import ViewMyProjects from "./ViewMyProjects";
 import Image from "react-bootstrap/Image";
 import UIColumnCenter from "./ui/UIColumnCenter";
+import AuthorImg from "../assets/smitha_kamath.jpg";
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
             <Image
               className="img-fluid img-thumbnail w-75 shadow my-5"
               roundedCircle
-              src="src/assets/smitha_kamath.JPEG"
+              src={AuthorImg}
               alt="header img"
             />
           </UIColumnCenter>
