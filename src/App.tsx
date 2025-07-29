@@ -6,8 +6,11 @@ import NavigationBar from "./components/NavigationBar";
 import "./scss/custom.scss";
 import "./customBootstrapStyles.css";
 import Footer from "./components/Footer";
+import { useState } from "react";
+import ModalScreen from "./components/ModalScreen";
 
 function App() {
+  const [modalShow, setModalShow] = useState(true);
   return (
     <div className="App">
       <NavigationBar />
@@ -16,6 +19,7 @@ function App() {
       <MyProjects />
       <Contact />
       <Footer />
+      <ModalScreen show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 }

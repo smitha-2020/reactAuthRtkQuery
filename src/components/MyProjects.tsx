@@ -8,7 +8,7 @@ const MyProjects = () => {
     <div id="projects">
       <div className="container card-main">
         <h3 className="mb-3 proj-card-title">
-          {appContext?.theme.toUpperCase()}'s Projects
+          {appContext?.name.toUpperCase()}'s Projects
         </h3>
         <div className="row g-2">
           {ProjectsItems.map((proj) => (
