@@ -24,3 +24,5 @@ AppConfigValues.ts
 *.njsproj
 *.sln
 *.sw?
+.env
+
