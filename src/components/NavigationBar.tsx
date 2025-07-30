@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const NavigationBar = () => {
   return (
-    <Navbar expand="lg" fixed="top" className="navBar">
+    <Navbar expand="lg" fixed="top" className="navBar" collapseOnSelect>
       <Container>
         <Navbar.Brand
           href="#home"
@@ -14,12 +14,11 @@ const NavigationBar = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav ">
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto custom-nav">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#experience">Experience</Nav.Link>
-            <Nav.Link href="#education">Education</Nav.Link>
+            <Nav.Link href="#header">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
