@@ -83,6 +83,7 @@ const ModalScreen = (props: any) => {
             </label>
             <div className="col-sm-10">
               <input
+                data-testid="username"
                 type="email"
                 className="form-control"
                 id="exampleFormControlInput1"
@@ -100,6 +101,7 @@ const ModalScreen = (props: any) => {
             </label>
 
             <input
+              data-testid="password"
               type="password"
               className="form-control"
               id="inputPassword"

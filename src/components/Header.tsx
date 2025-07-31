@@ -32,7 +32,9 @@ const Header = () => {
         </div>
         <div className="row">
           <UIColumnCenter style="flex-column align-items-start text-secondary py-5">
-            <h3 className={"text-secondary fw-bold lh-1"}>SMITHA KAMATH</h3>
+            <h3 className={"text-secondary fw-bold lh-1"} data-testid="name">
+              SMITHA KAMATH
+            </h3>
             <h1 className={"text-capitalize lh-1 text-primary mb-5"}>
               FrontEnd/React Native Developer
             </h1>

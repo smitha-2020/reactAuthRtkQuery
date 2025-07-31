@@ -10,7 +10,7 @@ const MyProjects = () => {
         <h3 className="mb-3 proj-card-title">
           {appContext?.name.toUpperCase()}'s Projects
         </h3>
-        <div className="row g-2">
+        <div className="row g-2" data-testid="projectItems">
           {ProjectsItems.map((proj) => (
             <ProjectCard key={proj.id} proj={proj} />
           ))}
