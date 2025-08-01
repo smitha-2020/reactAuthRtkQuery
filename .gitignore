@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 AppConfigValues.ts
+coverage/
 
 
 # Editor directories and files

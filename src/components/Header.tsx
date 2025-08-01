@@ -27,6 +27,7 @@ const Header = () => {
               role="switch"
               id="flexSwitchCheckDefault"
               onChange={toggleTheme}
+              data-testid="theme-switch"
             />
           </div>
         </div>
