@@ -1,5 +1,3 @@
-import { expect, test, it, describe, beforeEach } from "vitest";
-
 import { render, screen } from "@testing-library/react";
 import MyProjects from "../components/MyProjects";
 

@@ -1,4 +1,3 @@
-import { expect, test, it, describe } from "vitest";
 import { render, screen } from "@testing-library/react";
 import Header from "../components/Header";
 

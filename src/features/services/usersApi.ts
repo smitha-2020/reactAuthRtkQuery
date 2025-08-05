@@ -93,7 +93,7 @@ export const usersApi = createApi({
     // send code then reset
     sendForgotPasswordEmail: builder.mutation<void, void>({
       //{ email: string }
-      query: (email) => ({
+      query: (_email) => ({
         // url: FORGOT_PASSWORD_ROUTE + `/${email}`,
         method: "POST",
       }),
