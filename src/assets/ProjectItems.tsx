@@ -1,24 +1,24 @@
 import type { ProjectItemProps } from "../types/type";
-import Project1Img from "../assets/project1-img.jpg";
+import Project1Img from "../assets/react-native.jpeg";
 import Project2Img from "../assets/project2-img.jpg";
 
 const ProjectsItems: ProjectItemProps[] = [
   {
     id: 1,
     projectImg: Project1Img,
-    projectTitle: "Portfolio",
+    projectTitle: "Recipe Listing",
     projectDescription:
-      "Simple functional Portfolio project using react-bootstrap component library, bootstrap CSS library to build responsive application and sass(mixins,variables) for additional styling.",
-    projectLink: "https://github.com/smitha-2020/reactAuthRtkQuery",
+      "Development of a cross-platform mobile app using React Native, creating intuitive interface for iOS and Android using component library to develop Theme and customise components.",
+    projectLink: "https://github.com/smitha-2020/reactNative_examples",
   },
   {
     id: 2,
     projectImg: Project2Img,
-    projectTitle: "Project 2",
+    projectTitle: "Recipe Listing Backend",
     projectDescription:
-      "Development of a cross-platform mobile app using React Native, creating intuitive interface for iOS and Android using component library to develop Theme and customise components.",
+      "Developing a backend for Recipe Listing project using Nodejs, Express, Joi for validation, Typescipt, No-Sql mongodb and docker ",
 
-    projectLink: "https://github.com/smitha-2020/reactNative_examples",
+    projectLink: "https://github.com/smitha-2020/recipeBook",
   },
   /**{
     id: 3,

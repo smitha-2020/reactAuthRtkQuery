@@ -8,6 +8,7 @@ const UIColumnCenter = ({
   style?: string;
 }) => {
   return (
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     <div className={`col-md-6 d-flex justify-content-center ${style}`}>
       {children}
     </div>

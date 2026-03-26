@@ -11,30 +11,36 @@ const About = () => {
           </UIRowCenter>
 
           <div
-            className="py-2 px-md-0 mb-5"
+            className="py-2 px-md-0 mb-5 font-dancing-script lh-sm"
             style={{ paddingLeft: "50px", paddingRight: "50px" }}
           >
-            <p className="text-start lh-lg">
-              Hello, welcome to my profile. My name is Smitha, a Frontend
-              Developer & Enthusiast , specializing in various technologies.
+            <p className="text-start ">
+              Hello, 👋 My name is Smitha and Having been lived in Helsinki for
+              the past eight years and with over five years of experience
+              developing frontend, backend and mobile applications, I am excited
+              about the opportunity to contribute to a company that is shaping
+              how technology simplifies everyday life for people around the
+              world.
             </p>
-            <p className="text-start lh-lg">
-              For the past 5 years, I have worked across diverse technologies
-              including React Native,React, Vue.js,Redux/RTKQuery,Python. UI
-              Libraries like React Native Paper and react bootstrap .Databases
-              such as MySQL, InfluxDB and PostgresSql .AWS cloud solutions(Ec2,
-              Lighsail, Lambda functions,S3) and Docker.
+            <p className="text-start ">
+              In am a versatile software engineer with 5+ years of experience in
+              frontend and mobile development using React, React Native, and
+              Ionic. Proficient in TypeScript/JavaScript and Node.js, with
+              experience building scalable APIs and responsive user interfaces.
+              Familiar with CI/CD pipelines, automated deployments, and
+              databases including PostgreSQL and MongoDB. Strong collaborator,
+              comfortable working with cross-functional teams and client
+              stakeholders. I have experience collaborating closely with
+              development teams to implement new features, improve application
+              performance, and create intuitive user experiences. Working on
+              enterprise-level applications has strengthened my ability to write
+              clean, maintainable code and contribute effectively in agile,
+              team-oriented environments. Experience of worknig with AWS cloud
+              solutions(Ec2, Lighsail, Lambda functions,S3) and Docker.
             </p>
-            <p className="text-start lh-lg">
+            <p className="text-start">
               Below are listed a few projects which i developed in my spare
               time. Please have a look.
-            </p>
-            <p className="text-start lh-lg">
-              I am enthusiastic and a quick learner and have good communication
-              skills in English.
-            </p>
-            <p className="text-start lh-lg">
-              Also I am a Finnish Citizen and Do you not need any Work Visa.
             </p>
           </div>
           <UIRowCenter style="col">

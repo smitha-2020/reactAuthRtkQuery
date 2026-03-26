@@ -6,16 +6,14 @@ import NavigationBar from "./components/NavigationBar";
 import "./scss/custom.scss";
 import "./customBootstrapStyles.css";
 import Footer from "./components/Footer";
-import { useState } from "react";
-import ModalScreen from "./components/ModalScreen";
-import { useAppSelector } from "./app/hook";
+
 import { useAuthentication } from "./hooks/useAuthentication";
 
 function App() {
-  const [modalShow, setModalShow] = useState(true);
+  //const [modalShow, setModalShow] = useState(true);
   useAuthentication();
 
-  const authData = useAppSelector((state) => state.authSlice);
+  //const authData = useAppSelector((state) => state.authSlice);
   return (
     <div className="App">
       <NavigationBar />
@@ -24,9 +22,6 @@ function App() {
       <MyProjects />
       <Contact />
       <Footer />
-      {!authData.isAuthenticated && (
-        <ModalScreen show={modalShow} onHide={() => setModalShow(false)} />
-      )}
     </div>
   );
 }

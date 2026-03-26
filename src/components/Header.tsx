@@ -1,7 +1,5 @@
 import ViewMyProjects from "./ViewMyProjects";
-import Image from "react-bootstrap/Image";
 import UIColumnCenter from "./ui/UIColumnCenter";
-import AuthorImg from "../assets/smitha_kamath.jpg";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContextProvider";
 
@@ -9,11 +7,12 @@ const Header = () => {
   const appContext = useContext(ThemeContext);
 
   const toggleTheme = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     appContext?.theme === "dark"
-      ? appContext?.setTheme("light")
+      ? appContext.setTheme("light")
       : appContext?.setTheme("dark");
 
-    document.documentElement.setAttribute("data-bs-theme", appContext?.theme!);
+    document.documentElement.dataset.bsTheme = appContext?.theme;
   };
 
   return (
@@ -42,14 +41,6 @@ const Header = () => {
             <div className={"mt-10"}>
               <ViewMyProjects />
             </div>
-          </UIColumnCenter>
-          <UIColumnCenter>
-            <Image
-              className="img-fluid img-thumbnail w-75 shadow my-5"
-              roundedCircle
-              src={AuthorImg}
-              alt="header img"
-            />
           </UIColumnCenter>
         </div>
       </div>

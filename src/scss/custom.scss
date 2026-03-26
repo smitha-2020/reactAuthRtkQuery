@@ -7,6 +7,7 @@
 @import "functions";
 
 $color-mode-type: data;
+$dancing-script-font: "Dancing Script", cursive;
 
 @include color-mode(dark) {
   .App {
@@ -56,9 +57,9 @@ $color-mode-type: data;
 
   .navBar {
     background-color: var(--bs-gray);
-  }
-  a {
-    color: $secondary !important;
+    a {
+      color: $secondary !important;
+    }
   }
 
   .about,
@@ -80,10 +81,21 @@ $color-mode-type: data;
   .card-main {
     margin-bottom: 50px;
     .proj-card {
-      transition: all 0.3s;
+      .project-card-img-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .project-card-img {
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+        background-color: var(--bs-body-bg);
+      }
+
       &:hover {
         cursor: pointer;
-        scale: 1.1;
+        scale: 0.98;
         opacity: 0.75;
       }
     }
@@ -96,6 +108,10 @@ $color-mode-type: data;
 
   h1 {
     font-size: rem(48);
+  }
+
+  .font-dancing-script {
+    font-family: $dancing-script-font;
   }
 }
 
@@ -112,7 +128,7 @@ $custom-colors: (
 //Merging existing to custom color
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
