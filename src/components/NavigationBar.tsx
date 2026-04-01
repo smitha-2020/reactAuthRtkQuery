@@ -18,6 +18,7 @@ const NavigationBar = () => {
           <Nav className="me-auto custom-nav">
             <Nav.Link href="#header">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>

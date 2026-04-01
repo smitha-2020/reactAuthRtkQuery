@@ -9,6 +9,20 @@
 $color-mode-type: data;
 $dancing-script-font: "Dancing Script", cursive;
 
+@keyframes skill-bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.88);
+  }
+  55% {
+    transform: translateY(-10px) scale(1.06);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @include color-mode(dark) {
   .App {
     .navBar {
@@ -20,7 +34,8 @@ $dancing-script-font: "Dancing Script", cursive;
     }
 
     .about,
-    .contact {
+    .contact,
+    .skills {
       background-color: var(--bs-gray-900);
     }
   }
@@ -36,7 +51,8 @@ $dancing-script-font: "Dancing Script", cursive;
     }
 
     .about,
-    .contact {
+    .contact,
+    .skills {
       background-color: var(--bs-gray);
     }
   }
@@ -63,8 +79,49 @@ $dancing-script-font: "Dancing Script", cursive;
   }
 
   .about,
-  .contact {
+  .contact,
+  .skills {
     background-color: var(--bs-gray);
+  }
+
+  .skills {
+    .skill-chip {
+      --skill-delay: 0s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3.25rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.625rem;
+      border: 1px solid rgba(var(--bs-primary-rgb), 0.35);
+      background-color: var(--bs-body-bg);
+      color: var(--bs-body-color);
+      font-weight: 500;
+      font-size: 0.95rem;
+      opacity: 0;
+      animation: skill-bounce-in 0.75s cubic-bezier(0.34, 1.45, 0.64, 1) forwards;
+      animation-delay: var(--skill-delay);
+      transition:
+        transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.35s ease;
+
+      &:hover {
+        transform: translateY(-10px) scale(1.04);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .skills .skill-chip {
+      animation: none;
+      opacity: 1;
+      transition: none;
+
+      &:hover {
+        transform: none;
+      }
+    }
   }
   .custom-nav {
     @include flexPositioning(column, center);

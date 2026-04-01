@@ -1,6 +1,8 @@
 import type { ProjectItemProps } from "../types/type";
 import Project1Img from "../assets/react-native.jpeg";
 import Project2Img from "../assets/project2-img.jpg";
+import Project3Img from "../assets/expense-tracker.png";
+import Project4Img from "../assets/homePage.png";
 
 const ProjectsItems: ProjectItemProps[] = [
   {
@@ -19,6 +21,24 @@ const ProjectsItems: ProjectItemProps[] = [
       "Developing a backend for Recipe Listing project using Nodejs, Express, Joi for validation, Typescipt, No-Sql mongodb and docker ",
 
     projectLink: "https://github.com/smitha-2020/recipeBook",
+  },
+  {
+    id: 3,
+    projectImg: Project3Img,
+    projectTitle: "Expense Tracker",
+    projectDescription:
+      "Implemented tracker using react-bootstrap, react hook form, Redux, Zod to validate user input, SASS and vitest test cases",
+
+    projectLink: "https://github.com/smitha-2020/gameLibraryApp",
+  },
+  {
+    id: 4,
+    projectImg: Project4Img,
+    projectTitle: "Photo Gallery",
+    projectDescription:
+      "Implemented Photo gallery with nestjs and mysql and react, react-bootstrap and Typescript on the frontend ",
+
+    projectLink: "https://github.com/smitha-2020/Nestjs-React-TypeORM",
   },
   /**{
     id: 3,

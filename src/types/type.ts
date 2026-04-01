@@ -5,3 +5,8 @@ export type ProjectItemProps = {
   projectDescription: string;
   projectLink: string;
 };
+
+export type SkillItemProps = {
+  id: number;
+  label: string;
+};

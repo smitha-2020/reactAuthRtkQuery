@@ -2,6 +2,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import MyProjects from "./components/MyProjects";
+import Skills from "./components/Skills";
 import NavigationBar from "./components/NavigationBar";
 import "./scss/custom.scss";
 import "./customBootstrapStyles.css";
@@ -19,6 +20,7 @@ function App() {
       <NavigationBar />
       <Header />
       <About />
+      <Skills />
       <MyProjects />
       <Contact />
       <Footer />
