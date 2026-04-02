@@ -3,6 +3,7 @@ import Project1Img from "../assets/react-native.jpeg";
 import Project2Img from "../assets/project2-img.jpg";
 import Project3Img from "../assets/expense-tracker.png";
 import Project4Img from "../assets/homePage.png";
+import Project5Img from "../assets/weather-app.png";
 
 const ProjectsItems: ProjectItemProps[] = [
   {
@@ -23,14 +24,15 @@ const ProjectsItems: ProjectItemProps[] = [
     projectLink: "https://github.com/smitha-2020/recipeBook",
   },
   {
-    id: 3,
-    projectImg: Project3Img,
-    projectTitle: "Expense Tracker",
+    id: 5,
+    projectImg: Project5Img,
+    projectTitle: "Weather App",
     projectDescription:
-      "Implemented tracker using react-bootstrap, react hook form, Redux, Zod to validate user input, SASS and vitest test cases",
+      "Displays weather based on the users geolocation, Using node in the backend and react in the frontend",
 
-    projectLink: "https://github.com/smitha-2020/gameLibraryApp",
+    projectLink: "https://github.com/smitha-2020/weatherApp",
   },
+
   {
     id: 4,
     projectImg: Project4Img,
@@ -39,6 +41,15 @@ const ProjectsItems: ProjectItemProps[] = [
       "Implemented Photo gallery with nestjs and mysql and react, react-bootstrap and Typescript on the frontend ",
 
     projectLink: "https://github.com/smitha-2020/Nestjs-React-TypeORM",
+  },
+  {
+    id: 3,
+    projectImg: Project3Img,
+    projectTitle: "Expense Tracker",
+    projectDescription:
+      "Implemented tracker using react-bootstrap, react hook form, Redux, Zod to validate user input, SASS and vitest test cases",
+
+    projectLink: "https://github.com/smitha-2020/gameLibraryApp",
   },
   /**{
     id: 3,
