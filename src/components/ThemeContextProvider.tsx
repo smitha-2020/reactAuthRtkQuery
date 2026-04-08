@@ -14,7 +14,7 @@ type ThemeContextProps = {
 
 export const ThemeContext = createContext<ThemeContextProps | null>(null);
 const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const name = "Smitha";
 
   const themeValue = useMemo(

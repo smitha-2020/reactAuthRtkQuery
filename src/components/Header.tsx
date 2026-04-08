@@ -7,12 +7,12 @@ const Header = () => {
   const appContext = useContext(ThemeContext);
 
   const toggleTheme = () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    appContext?.theme === "dark"
-      ? appContext.setTheme("light")
-      : appContext?.setTheme("dark");
-
-    document.documentElement.dataset.bsTheme = appContext?.theme;
+    if (!appContext) return;
+    if (appContext.theme === "dark") {
+      appContext.setTheme("light");
+    } else {
+      appContext.setTheme("dark");
+    }
   };
 
   return (
@@ -29,6 +29,7 @@ const Header = () => {
                 type="checkbox"
                 role="switch"
                 id="flexSwitchCheckDefault"
+                checked={appContext?.theme === "dark"}
                 onChange={toggleTheme}
                 aria-label="Toggle light or dark theme"
               />
