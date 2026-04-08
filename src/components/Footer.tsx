@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="d-flex flex-row justify-content-center py-3">
-      ©copyright2026.
-    </div>
+    <footer className="site-footer d-flex flex-row justify-content-center align-items-center text-center px-3">
+      <span>© {new Date().getFullYear()} Smitha Kamath · Portfolio</span>
+    </footer>
   );
 };
 

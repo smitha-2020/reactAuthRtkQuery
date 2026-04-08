@@ -1,4 +1,10 @@
-import { createContext, useState, type ReactNode, useMemo } from "react";
+import {
+  createContext,
+  useState,
+  useEffect,
+  type ReactNode,
+  useMemo,
+} from "react";
 
 type ThemeContextProps = {
   theme: string;
@@ -15,6 +21,10 @@ const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
     () => ({ theme, setTheme, name }),
     [theme, setTheme]
   );
+
+  useEffect(() => {
+    document.documentElement.dataset.bsTheme = theme;
+  }, [theme]);
 
   return <ThemeContext value={themeValue}>{children}</ThemeContext>;
 };

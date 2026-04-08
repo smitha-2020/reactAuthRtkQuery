@@ -7,15 +7,22 @@ const NavigationBar = () => {
     <Navbar expand="lg" fixed="top" className="navBar" collapseOnSelect>
       <Container>
         <Navbar.Brand
-          href="#home"
-          className="fs-4 font-weight-lighter text-tertiary"
+          href="#header"
+          className="navbar-brand-lockup d-inline-flex align-items-center"
         >
-          SK
+          <img
+            src="/logo.svg"
+            alt="Smitha Kamath — home"
+            width={36}
+            height={36}
+            className="navbar-logo flex-shrink-0"
+            decoding="async"
+          />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto custom-nav">
+          <Nav className="ms-auto custom-nav">
             <Nav.Link href="#header">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>

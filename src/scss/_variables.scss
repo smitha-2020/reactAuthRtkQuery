@@ -1,4 +1,12 @@
-$font-stack: "Bebas Neue", sans-serif;
-$primary: #712cf9;
-$secondary: white;
-$thumbnail-border-color: pink;
+// Display / UI: Plus Jakarta Sans (loaded in custom.scss)
+$font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+// Long-form body copy
+$font-body: "Source Sans 3", "Source Sans", system-ui, sans-serif;
+// Accent script (hero name, optional labels)
+$font-accent: "Dancing Script", cursive;
+
+$font-stack: $font-display;
+// Coral (accents, CTAs) + warm cream secondary
+$primary: #d4634f;
+$secondary: #fffaf7;
+$thumbnail-border-color: #e8a090;

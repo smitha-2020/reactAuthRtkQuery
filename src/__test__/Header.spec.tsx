@@ -6,6 +6,6 @@ describe("Testing MyProjects component", () => {
     render(<Header />);
     const heading = screen.getByTestId("name");
     expect(heading).toBeInTheDocument();
-    expect(heading).toHaveTextContent(/KAMATH$/);
+    expect(heading).toHaveTextContent(/Kamath$/i);
   });
 });

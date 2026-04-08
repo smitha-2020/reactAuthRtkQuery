@@ -1,12 +1,29 @@
 .btn-flat {
-  background-color: purple;
-  color: white;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  background-color: #c4543f;
+  color: #fffaf7;
+  border: none;
+  border-radius: 0.5rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
 }
 
 [data-bs-theme="light"] .btn-flat:hover,
 [data-bs-theme="light"] .btn-flat:focus {
-  background-color: white;
-  color: purple;
+  background-color: #5c3d2e;
+  color: #fffaf7;
+}
+
+[data-bs-theme="dark"] .btn-flat:hover,
+[data-bs-theme="dark"] .btn-flat:focus {
+  background-color: #ff8f7a;
+  color: #2d1b14;
 }
 
 .btn-xxl {

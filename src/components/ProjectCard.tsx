@@ -23,7 +23,7 @@ const ProjectCard = ({ proj }: { proj: ProjectItemProps }) => {
                   {proj.projectTitle}
                 </Card.Title>
               </div>
-              <Card.Text className="font-dancing-script">
+              <Card.Text className="text-body-secondary">
                 {proj.projectDescription}
               </Card.Text>
               <div className="proj-card-button">

@@ -3,52 +3,49 @@ import UIRowCenter from "./ui/UIRowCenter";
 
 const About = () => {
   return (
-    <div className="about text-light py-5 mb-5" id="about">
+    <section
+      className="about portfolio-section mb-5"
+      id="about"
+      aria-labelledby="about-heading"
+    >
       <div className="container">
-        <div className="row d-flex flex-column">
-          <UIRowCenter style="col pb-5 fw-bolder">
-            <h3> ABOUT ME</h3>
-          </UIRowCenter>
+        <header className="section-heading">
+          <p className="section-heading__eyebrow">Profile</p>
+          <h2 id="about-heading" className="section-heading__title">
+            About me
+          </h2>
+          <div className="section-heading__line" aria-hidden />
+        </header>
 
-          <div
-            className="py-2 px-md-0 mb-5 font-dancing-script lh-sm"
-            style={{ paddingLeft: "50px", paddingRight: "50px" }}
-          >
-            <p className="text-start ">
-              Hello, 👋 My name is Smitha and Having been lived in Helsinki for
-              the past eight years and with over five years of experience
-              developing frontend, backend and mobile applications, I am excited
-              about the opportunity to contribute to a company that is shaping
-              how technology simplifies everyday life for people around the
-              world.
-            </p>
-            <p className="text-start ">
-              In am a versatile software engineer with 5+ years of experience in
-              frontend and mobile development using React, React Native, and
-              Ionic. Proficient in TypeScript/JavaScript and Node.js, with
-              experience building scalable APIs and responsive user interfaces.
-              Familiar with CI/CD pipelines, automated deployments, and
-              databases including PostgreSQL and MongoDB. Strong collaborator,
-              comfortable working with cross-functional teams and client
-              stakeholders. I have experience collaborating closely with
-              development teams to implement new features, improve application
-              performance, and create intuitive user experiences. Working on
-              enterprise-level applications has strengthened my ability to write
-              clean, maintainable code and contribute effectively in agile,
-              team-oriented environments. Experience of worknig with AWS cloud
-              solutions(Ec2, Lighsail, Lambda functions,S3) and Docker.
-            </p>
-            <p className="text-start">
-              Below are listed a few projects which i developed in my spare
-              time. Please have a look.
-            </p>
-          </div>
-          <UIRowCenter style="col">
-            <ViewMyProjects />
-          </UIRowCenter>
+        <div className="about-prose px-3 px-md-4 mb-5">
+          <p className="text-start">
+            Hello, 👋 My name is Smitha. I have lived in Helsinki for the past
+            eight years and bring over five years of experience developing
+            frontend, backend, and mobile applications. I am motivated to
+            contribute to teams that shape how technology simplifies everyday
+            life.
+          </p>
+          <p className="text-start">
+            I am a versatile software engineer with 5+ years of experience in
+            frontend and mobile development using React, React Native, and
+            Ionic. I work comfortably with TypeScript/JavaScript and Node.js,
+            and I have built scalable APIs and responsive interfaces. I am
+            familiar with CI/CD, automated deployments, and databases including
+            PostgreSQL and MongoDB. I collaborate well with cross-functional
+            teams and stakeholders, and I care about performance, maintainable
+            code, and intuitive UX in agile environments. I have worked with
+            AWS (EC2, Lightsail, Lambda, S3) and Docker.
+          </p>
+          <p className="text-start mb-0">
+            Below are a few projects I developed in my spare time — have a look.
+          </p>
         </div>
+
+        <UIRowCenter style="col">
+          <ViewMyProjects />
+        </UIRowCenter>
       </div>
-    </div>
+    </section>
   );
 };
 
