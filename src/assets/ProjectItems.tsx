@@ -4,6 +4,7 @@ import Project2Img from "../assets/project2-img.jpg";
 import Project3Img from "../assets/expense-tracker.png";
 import Project4Img from "../assets/homePage.png";
 import Project5Img from "../assets/weather-app.png";
+import Project6Img from "../assets/restaurent.png";
 
 const ProjectsItems: ProjectItemProps[] = [
   {
@@ -32,7 +33,16 @@ const ProjectsItems: ProjectItemProps[] = [
 
     projectLink: "https://github.com/smitha-2020/weatherApp",
   },
+  {
+    id: 6,
+    projectImg: Project6Img,
+    projectTitle: "Restaurent App",
+    projectDescription:
+      "A web application for a restaurent that allows users to view the menu, make orders, and view the menu",
 
+    projectLink: "https://github.com/smitha-2020/react-restaurent-proj",
+  },
+  
   {
     id: 4,
     projectImg: Project4Img,
